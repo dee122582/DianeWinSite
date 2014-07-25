@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta name=viewport content='width=700'>
+
+	<title>Diane Win Design</title>
+
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/diane.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+
+<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script>
+	    $(document).ready(function(){
+	        $("#nav-mobile").html($("#nav-main").html());
+	        $("#nav-trigger span").click(function(){
+	            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+	                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+	                $(this).removeClass("open");
+	            } else {
+	                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+	                $(this).addClass("open");
+	            }
+	        });
+	    });
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Copied from "viewport metatag" http://demos.jquerymobile.com/1.4.3/pages/ -->
+
+
+</head>
+
+<body>
+
+<div class="flex">
+
+	<nav id="nav-main">
+		<ul>
+			<li><a href="">work</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">process</a></li>
+			<li><a href="">contact</a></li>
+			<li><a href="http://dianewinblogs.com/" target="_blank">blog</a></li>
+		</ul>
+	</nav>
+
+	<div id="nav-trigger">
+		<span><i class="fa fa-bars"></i></span>
+	</div>
+	<nav id="nav-mobile"></nav>
+	<header>
+
+		<div class="jumbotron">	
+			<div class="container">
+		  <h1>Hi there...</h1>
+		  <h3>it's nice to finally meet you.</h3>
+		  <p><a class="btn btn-primary" role="button">Hire me</a></p>
+		  </div>
+		</div>
+
+	</header>
+
+	<article>
+
+		<div id="bordertop"></div>
+
+		<h3>i'm awesome! say hi...</h3>
+	
+		<a href="mailto:hey@dianewin.com">hey@dianewin.com</a>
+
+	<div id="media">
+    	<a href="http://ca.linkedin.com/pub/diane-huynh/11/448/430" target="_blank"><div id="linked"></div></a>	
+    	<a href="https://twitter.com/DeeWinDesign" target="_blank"><div id="twitter"></div></a>	
+    	<a href="http://www.pinterest.com/DeeWinDesign/" target="_blank"><div id="pinterest"></div></a>	
+    	<a href="http://instagram.com/deewindesign" target="_blank"><div id="instagram"></div></a>	
+	</div>
+
+	<div id="borderbot"></div>
+
+	</article>
+
+	<aside>
+	</aside>
+
+	<footer>
+	</footer>
+
+</div>
+
+</body>
+</html>
